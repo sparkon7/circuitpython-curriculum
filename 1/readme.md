@@ -53,7 +53,7 @@ import math
 x = math.pow(2,3)  # 2*2*2
 print(x)           # -> 8.0
 ```
-- importing the `date` submodule from `datetime` to determine today's date
+- Importing the `date` submodule from `datetime` to determine today's date
 ```python
 from datetime import date
 today = date.today()
@@ -149,8 +149,7 @@ else:
 
 # `for` loops, `range()` and `len()` functions
 A `for` loop is used to iterate over a sequence of data, such as a `list`, `str`, or `dict`. Using a `for` loop you can execute code for each item in the sequence.
-You can write a `for` loop 
-- print each item in a list
+- Print each item in a list
 ```python
 data = [1, 2, 3]
 for x in data:
@@ -159,4 +158,11 @@ for x in data:
 # -> 2
 # -> 3
 ```
-
+The `range()` function is very helpful when writing loops. It is a function that returns a sequence of numbers between 0 and the input given. 
+```python
+for x in range(3):
+	print(x)
+# -> 0
+# -> 1
+# -> 2
+```
