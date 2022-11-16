@@ -37,7 +37,7 @@ n = (x + y) * z  # -> 15
 foo = "abc."
 foo = foo.strip(".")  # -> "abc"
 ```
-- Adding characterst to a string
+- Adding characters to a string
 ```
 name = "first"
 name = name + "last"  # -> "firstlast"
