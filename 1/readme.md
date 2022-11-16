@@ -10,7 +10,7 @@
 - Data science: machine learning, artificial intelligence
 - System Management/Automation: writing custom scripts to manage computers
 - Computer Graphics: creating graphs and visuals
-- *Internet of Things*: Python is supported on many devices and sensors
+- **Internet of Things**: Python is supported on many devices and sensors
 
 # Writing Python Code
 Python is an "interpreted" language. The Python interpreter reads and executes your code line-by-line. The easiest way to run Python code is by writing it in a `.py` file, such as `program.py`, and running it with the shell command `python program.py`
@@ -23,4 +23,16 @@ y = 1                # declare an int
 z = ["50", y, 7.6]   # declare a list containing [string, variable, float] types
 ```
 
-## 
+## Operations on Variables
+Operations on variables are done two different ways. One method is using operators such as `+`, or `-`. The other method is by using dot-notation to access attributes and methods of an object. Each different variable type has a different set of supported operations. Here are some examples...
+- Adding two ints: 
+```
+x = 1
+y = 2
+z = x + y  # -> 3
+```
+- Removing a character from the end of a string:
+```
+foo = "abc."
+foo = foo.strip(".")  # -> "abc"
+```
