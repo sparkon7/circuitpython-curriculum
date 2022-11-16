@@ -166,3 +166,10 @@ for x in range(3):
 # -> 1
 # -> 2
 ```
+Let's piece it all together. Using the `for` statement, along with the `range()` and `len()` functions, we can write a for loop that iterates through each element of a list and updates it.
+```python
+data = [10, 11, 12, 13]
+for i in range(len(data)):
+	data[i] = data[i] + 5
+print(data)  # -> [15, 16, 17, 18]
+```
