@@ -30,17 +30,20 @@ Operations on variables are done two different ways. One method uses operators s
 x = 1
 y = 2
 z = 5
-n = (x + y) * z  # -> 15
+n = (x + y) * z 
+print(n)  # -> 15
 ```
 - Removing a character from the end of a string:
 ```
 foo = "abc."
-foo = foo.strip(".")  # -> "abc"
+foo = foo.strip(".")  
+print(foo)  # -> "abc"
 ```
 - Adding characters to a string
 ```
 name = "first"
-name = name + "last"  # -> "firstlast"
+name = name + "last"  
+print(name)  # -> "firstlast"
 ```
 We'll see more as we go!
 
@@ -56,7 +59,15 @@ mylist = ["dog", "cat", "frog"]
 ## Accessing list items
 Python `list`s are ordered. The first item lives at index `0`, the next at index `1`, and so on. Trying to access an item which does not exist will result in an error.
 ```
-mylist[0]  # -> "dog"
-mylist[2]  # -> "frog"
-mylist[5]  # -> ERROR!
+print(mylist[0])  # -> "dog"
+print(mylist[2])  # -> "frog"
+print(mylist[5])  # -> ERROR!
+```
+
+### Deleting list items
+You can delete an item by using the `del` keyword
+```
+del mylist[0]     # -> mylist = ["cat", "frog"]
+print(mylist[0])  # -> "cat"
+print(mylist[2])  # -> ERROR!
 ```
