@@ -41,3 +41,5 @@ foo = foo.strip(".")  # -> "abc"
 ```
 name = "first"
 name = name + "last"  # -> "firstlast"
+```
+We'll see more as we go!
