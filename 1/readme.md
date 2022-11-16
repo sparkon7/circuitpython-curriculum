@@ -53,15 +53,16 @@ Python has a powerful builtin type, `list` which allows you to store multiple it
 ### Creating a list
 Lists are created using square brackets to surround the entries.
 ```python
-mylist = ["dog", "cat", "frog"]
+mylist = ["dog", "cat", "frog", "log"]
 ```
 
 ### Accessing list items
-Python `list`s are ordered. The first item lives at index `0`, the next at index `1`, and so on. Trying to access an item which does not exist will result in an error.
+Python `list`s are ordered. The first item lives at index `0`, the next at index `1`, and so on. You can access a "slice" of multiple elements with the syntax `[start:stop]`. Trying to access an item which does not exist will result in an error.
 ```python
-print(mylist[0])  # -> "dog"
-print(mylist[2])  # -> "frog"
-print(mylist[5])  # -> ERROR!
+print(mylist[0])    # -> "dog"
+print(mylist[2])    # -> "frog"
+print(mylist[1:3])  # -> ["cat", "frog"]
+print(mylist[5])    # -> ERROR!
 ```
 
 ### Deleting list items
