@@ -54,7 +54,7 @@ x = math.pow(2,3)  # 2*2*2
 print(x)           # -> 8.0
 ```
 - importing the `date` submodule from `datetime` to determine today's date
-```
+```python
 from datetime import date
 today = date.today()
 print(today)  # -> "2022-11-16"
