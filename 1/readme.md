@@ -24,7 +24,7 @@ z = ["50", y, 7.6]   # declare a list containing [string, variable, float] types
 ```
 
 ## Operations on Variables
-Operations on variables are done two different ways. One method uses operators such as `+`, or `-`. The other method is by using dot-notation to access attributes and methods of an object. Each different variable type has a different set of supported operations. Here are some examples...
+Operations on variables are done two different ways. One method uses operators such as `+`, or `-`. The other method uses dot-notation to access attributes and methods of an object. Each different variable type has a different set of supported operations. Here are some examples...
 - Math on numbers: 
 ```
 x = 1
