@@ -49,26 +49,35 @@ We'll see more as we go!
 
 # Lists
 Python has a powerful builtin type, `list` which allows you to store multiple items in a single variable, and access individual items or selections of multiple items easily
-
 ### Creating a list
 Lists are created using square brackets to surround the entries.
 ```python
 mylist = ["dog", "cat", "frog", "log"]
+mylist.append("bog")
+print(mylist)  # -> ["dog", "cat", "frog", "log", "bog"]
 ```
-
 ### Accessing list items
-Python `list`s are ordered. The first item lives at index `0`, the next at index `1`, and so on. You can access a "slice" of multiple elements with the syntax `[start:stop]`. Trying to access an item which does not exist will result in an error.
+Python `list`s are ordered. The first item is positioned at index `0`, the next at index `1`, and so on. You can access a "slice" of multiple elements with the syntax `[start:stop]`. Trying to access an item which does not exist will result in an error.
 ```python
 print(mylist[0])    # -> "dog"
 print(mylist[2])    # -> "frog"
 print(mylist[1:3])  # -> ["cat", "frog"]
 print(mylist[5])    # -> ERROR!
 ```
-
 ### Deleting list items
 You can delete an item by using the `del` keyword
 ```python
 del mylist[0]     # -> mylist = ["cat", "frog"]
 print(mylist[0])  # -> "cat"
 print(mylist[2])  # -> ERROR!
+```
+
+# Dictionaries
+Another powerful builtin of Python, the `dict`. Dictionaries are "key:value" pairs, with the "value" being hash mapped to the "key". 
+### Creating a `dict`
+Write the initial pairs inside of curly braces
+```
+data = {"dog": "woof", "cat": "meow"}
+data["cow"] = "moo"
+print(data)  # -> {"dog": "woof", "cat": "meow", "cow": "moo"}
 ```
