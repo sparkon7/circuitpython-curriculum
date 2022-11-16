@@ -83,6 +83,13 @@ You can delete an item by using the `del` keyword
 del mylist[0]     # -> mylist = ["cat", "frog", "log", "bog"]
 print(mylist[0])  # -> "cat"
 ```
+### Changing list items
+You can reassign the value for an item by using an assignment, `=`, operator
+```python
+vals = ["a", "b", "c"]
+vals[1] = "z"
+print(vals)  # -> ["a", "z", "c"]
+```
 
 # Dictionaries
 Another powerful builtin of Python, the `dict`. Dictionaries are "key:value" pairs, with the "value" being hash mapped to the "key". 
@@ -141,3 +148,10 @@ else:
 ```
 
 # `for` loops, `range()` function 
+A `for` loop is used to iterate over a sequence of data, such as a `list`, `str`, or `dict`. Using a `for` loop you can execute code for each item in the sequence.
+- print each item in a list
+```python
+data = [1, 2, 3]
+for x in data:
+	print(x)
+```
