@@ -25,14 +25,19 @@ z = ["50", y, 7.6]   # declare a list containing [string, variable, float] types
 
 ## Operations on Variables
 Operations on variables are done two different ways. One method is using operators such as `+`, or `-`. The other method is by using dot-notation to access attributes and methods of an object. Each different variable type has a different set of supported operations. Here are some examples...
-- Adding two ints: 
+- Math on numbers: 
 ```
 x = 1
 y = 2
-z = x + y  # -> 3
+z = 5
+n = (x + y) * z  # -> 15
 ```
 - Removing a character from the end of a string:
 ```
 foo = "abc."
 foo = foo.strip(".")  # -> "abc"
 ```
+- Adding characterst to a string
+```
+name = "first"
+name = name + "last"  # -> "firstlast"
