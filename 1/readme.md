@@ -154,4 +154,7 @@ A `for` loop is used to iterate over a sequence of data, such as a `list`, `str`
 data = [1, 2, 3]
 for x in data:
 	print(x)
+# -> 1
+# -> 2
+# -> 3
 ```
