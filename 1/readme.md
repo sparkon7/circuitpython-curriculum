@@ -79,7 +79,7 @@ print(mylist[5])    # -> ERROR!
 ### Deleting list items
 You can delete an item by using the `del` keyword
 ```python
-del mylist[0]     # -> mylist = ["cat", "frog"]
+del mylist[0]     # -> mylist = ["cat", "frog", "log", "bog"]
 print(mylist[0])  # -> "cat"
 print(mylist[2])  # -> ERROR!
 ```
