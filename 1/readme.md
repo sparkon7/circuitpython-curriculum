@@ -43,3 +43,20 @@ name = "first"
 name = name + "last"  # -> "firstlast"
 ```
 We'll see more as we go!
+
+# Lists
+Python has a powerful builtin type, `list` which allows you to store multiple items in a single variable, and access individual items or selections of multiple items easily
+
+## Creating a list
+Lists are created using square brackets to surround the entries.
+```
+mylist = ["dog", "cat", "frog"]
+```
+
+## Accessing list items
+Python `list`s are ordered. The first item lives at index `0`, the next at index `1`, and so on. Trying to access an item which does not exist will result in an error.
+```
+mylist[0]  # -> "dog"
+mylist[2]  # -> "frog"
+mylist[5]  # -> ERROR!
+```
