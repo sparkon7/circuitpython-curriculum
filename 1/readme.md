@@ -45,6 +45,20 @@ print(name)  # -> "firstlast"
 ```
 We'll see more as we go!
 
+# modules and imports
+One of the strengths of Python is the amount of libraries it supports. This allows you to use code from another module in your program. You import modules using the `import` keyword, typically at the beginning of the file.
+- importing `math` and using the `pow` function
+```python
+import math
+x = math.pow(2,3)  # 2*2*2
+print(x)           # -> 8.0
+```
+- importing the `date` submodule from `datetime` to determine today's date
+```
+from datetime import date
+today = date.today()
+print(today)  # -> "2022-11-16"
+```
 # Lists
 Python has a powerful builtin type, `list` which allows you to store multiple items in a single variable, and access individual items or selections of multiple items easily
 ### Creating a list
@@ -98,3 +112,7 @@ You can incorporate the `and`, `or`, and `not` keywords to check multiple condit
 price = 10
 print(price > 1 and price < 100)  # -> True
 ```
+
+# `if`, `elif`, and `else` statements
+You'll often want your program to do different things depending on some variable or input. You can control the flow of your program using `if` statements, which execute code only *if* their condition is `True`.
+
