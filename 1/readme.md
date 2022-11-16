@@ -79,13 +79,10 @@ data = {"dog": "woof", "cat": "meow"}
 data["cow"] = "moo"
 print(data)  # -> {"dog": "woof", "cat": "meow", "cow": "moo"}
 ```
-### Get a list of the keys
-```
+### Get a list of the keys and values
+```python
 keys = dict.keys()
 print(list(keys))  # -> ["dog", "cat", "cow"]
-```
-### Get a list of the values
-```
 vals = dict.vals()
 print(list(vals))  # -> ["woof", "meow", "moo"]
 ```
