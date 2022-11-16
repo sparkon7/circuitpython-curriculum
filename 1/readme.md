@@ -76,7 +76,7 @@ print(mylist[2])  # -> ERROR!
 Another powerful builtin of Python, the `dict`. Dictionaries are "key:value" pairs, with the "value" being hash mapped to the "key". 
 ### Creating a `dict`
 Write the initial pairs inside of curly braces
-```
+```python
 data = {"dog": "woof", "cat": "meow"}
 data["cow"] = "moo"
 print(data)  # -> {"dog": "woof", "cat": "meow", "cow": "moo"}
