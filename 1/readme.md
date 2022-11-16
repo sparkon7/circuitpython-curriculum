@@ -172,3 +172,13 @@ for i in range(len(data)):
 	data[i] = data[i] + 5
 print(data)  # -> [15, 16, 17, 18]
 ```
+Now, let's write a `for` loop that prints every key and value from a dictionary
+```
+data = {"dog": "woof", "cat": "meow"}
+for k in data.keys():
+	val = data[k]
+	msg = k + " says " + val
+	print(msg)
+# -> "dog says woof"
+# -> "cat says meow"
+```
