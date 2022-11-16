@@ -14,7 +14,6 @@
 
 # Writing Python Code
 Python is an "interpreted" language. The Python interpreter reads and executes your code line-by-line. The easiest way to run Python code is by writing it in a `.py` file, such as `program.py`, and running it with the shell command `python program.py`
-
 ### Declaring Variables
 Python is an "untyped" language, meaning you do not need to declare types of variables. 
 ```python
@@ -22,7 +21,6 @@ x = "hello"          # declare a string
 y = 1                # declare an int
 z = ["50", y, 7.6]   # declare a list containing [string, variable, float] types
 ```
-
 ### Operations on Variables
 Operations on variables are done two different ways. One method uses operators such as `+`, or `-`. The other method uses dot-notation to access attributes and methods of an object. Each different variable type has a different set of supported operations. Here are some examples...
 - Math on numbers: 
@@ -80,4 +78,14 @@ Write the initial pairs inside of curly braces
 data = {"dog": "woof", "cat": "meow"}
 data["cow"] = "moo"
 print(data)  # -> {"dog": "woof", "cat": "meow", "cow": "moo"}
+```
+### Get a list of the keys
+```
+keys = dict.keys()
+print(list(keys))  # -> ["dog", "cat", "cow"]
+```
+### Get a list of the values
+```
+vals = dict.vals()
+print(list(vals))  # -> ["woof", "meow", "moo"]
 ```
