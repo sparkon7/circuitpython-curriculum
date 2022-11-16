@@ -86,3 +86,15 @@ print(list(keys))  # -> ["dog", "cat", "cow"]
 vals = dict.vals()
 print(list(vals))  # -> ["woof", "meow", "moo"]
 ```
+
+# Logic and Equality in Python
+One of the most common things you'll do as a programmer is check if objects or values are equal.
+```python
+password = "badpassword"
+print(password == "goodpassword")  # -> False
+```
+You can incorporate the `and`, `or`, and `not` keywords to check multiple conditions.
+```python
+price = 10
+print(price > 1 and price < 100)  # -> True
+```
