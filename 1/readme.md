@@ -122,6 +122,7 @@ You can incorporate the `and`, `or`, and `not` keywords to check multiple condit
 ```python
 price = 10
 print(price > 1 and price < 100)  # -> True
+print(not price == 10)            # -> False
 ```
 
 # `if`, `elif`, and `else` statements
@@ -139,4 +140,4 @@ else:
 # - > "You're asking a little much..."
 ```
 
-# 
+# `for` loops, `range()` function 
