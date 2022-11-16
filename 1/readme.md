@@ -81,7 +81,6 @@ You can delete an item by using the `del` keyword
 ```python
 del mylist[0]     # -> mylist = ["cat", "frog", "log", "bog"]
 print(mylist[0])  # -> "cat"
-print(mylist[2])  # -> ERROR!
 ```
 
 # Dictionaries
@@ -114,5 +113,15 @@ print(price > 1 and price < 100)  # -> True
 ```
 
 # `if`, `elif`, and `else` statements
-You'll often want your program to do different things depending on some variable or input. You can control the flow of your program using `if` statements, which execute code only *if* their condition is `True`.
-
+You'll often want your program to do different things depending on some variable or input. You can control the flow of your program using `if` statements, which execute code only *if* their condition is `True`. An `if` statement can be on its own, or followed by an `elif` ("else if"), or `else` statement.
+```python
+price = 25
+if price <= 3:
+	print("That's pretty cheap!")
+elif price > 3 and price <= 15:
+	print("Ok, that's a fair price")
+elif price > 15 and price <= 20:
+	print("You're asking a little much...")
+else:
+	print("You're out of your mind!") 
+```
