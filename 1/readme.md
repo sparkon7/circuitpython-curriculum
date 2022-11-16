@@ -124,4 +124,5 @@ elif price > 15 and price <= 20:
 	print("You're asking a little much...")
 else:
 	print("You're out of your mind!") 
+# - > "You're out of your mind!"
 ```
