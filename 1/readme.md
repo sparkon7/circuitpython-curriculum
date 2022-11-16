@@ -12,6 +12,7 @@
 - Computer Graphics: creating graphs and visuals
 
 # Writing Python Code
+Python is an "interpreted" language. The Python interpreter reads and executes your code line-by-line. The easiest way to run Python code is by writing it in a `.py` file, such as `program.py`, and running it with the shell command `python program.py`
 
 ## Declaring Variables
 Python is an "untyped" language, meaning you do not need to declare types of variables. 
@@ -20,3 +21,5 @@ x = "hello"          # declare a string
 y = 1                # declare an int
 z = ["50", y, 7.6]   # declare a list containing [string, variable, float] types
 ```
+
+## 
