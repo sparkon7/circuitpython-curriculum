@@ -10,6 +10,7 @@
 - Data science: machine learning, artificial intelligence
 - System Management/Automation: writing custom scripts to manage computers
 - Computer Graphics: creating graphs and visuals
+- *Internet of Things*: Python is supported on many devices and sensors
 
 # Writing Python Code
 Python is an "interpreted" language. The Python interpreter reads and executes your code line-by-line. The easiest way to run Python code is by writing it in a `.py` file, such as `program.py`, and running it with the shell command `python program.py`
