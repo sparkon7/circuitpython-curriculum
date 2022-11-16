@@ -17,7 +17,7 @@ Python is an "interpreted" language. The Python interpreter reads and executes y
 
 ## Declaring Variables
 Python is an "untyped" language, meaning you do not need to declare types of variables. 
-```
+```python
 x = "hello"          # declare a string
 y = 1                # declare an int
 z = ["50", y, 7.6]   # declare a list containing [string, variable, float] types
@@ -26,7 +26,7 @@ z = ["50", y, 7.6]   # declare a list containing [string, variable, float] types
 ## Operations on Variables
 Operations on variables are done two different ways. One method uses operators such as `+`, or `-`. The other method uses dot-notation to access attributes and methods of an object. Each different variable type has a different set of supported operations. Here are some examples...
 - Math on numbers: 
-```
+```python
 x = 1
 y = 2
 z = 5
@@ -34,13 +34,13 @@ n = (x + y) * z
 print(n)  # -> 15
 ```
 - Removing a character from the end of a string:
-```
+```python
 foo = "abc."
 foo = foo.strip(".")  
 print(foo)  # -> "abc"
 ```
 - Adding characters to a string
-```
+```python
 name = "first"
 name = name + "last"  
 print(name)  # -> "firstlast"
@@ -52,13 +52,13 @@ Python has a powerful builtin type, `list` which allows you to store multiple it
 
 ## Creating a list
 Lists are created using square brackets to surround the entries.
-```
+```python
 mylist = ["dog", "cat", "frog"]
 ```
 
 ## Accessing list items
 Python `list`s are ordered. The first item lives at index `0`, the next at index `1`, and so on. Trying to access an item which does not exist will result in an error.
-```
+```python
 print(mylist[0])  # -> "dog"
 print(mylist[2])  # -> "frog"
 print(mylist[5])  # -> ERROR!
@@ -66,7 +66,7 @@ print(mylist[5])  # -> ERROR!
 
 ### Deleting list items
 You can delete an item by using the `del` keyword
-```
+```python
 del mylist[0]     # -> mylist = ["cat", "frog"]
 print(mylist[0])  # -> "cat"
 print(mylist[2])  # -> ERROR!
