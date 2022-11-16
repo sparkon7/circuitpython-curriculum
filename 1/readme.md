@@ -59,6 +59,7 @@ from datetime import date
 today = date.today()
 print(today)  # -> "2022-11-16"
 ```
+
 # Lists
 Python has a powerful builtin type, `list` which allows you to store multiple items in a single variable, and access individual items or selections of multiple items easily
 ### Creating a list
@@ -100,6 +101,17 @@ vals = dict.vals()
 print(list(vals))  # -> ["woof", "meow", "moo"]
 ```
 
+# Determining the length of `string`s, `list`s, `dict`s: `len()`
+The `len()` builtin function is very handy. Allows you to check the length of a `str`, or the number of elements in a `list` or `dict`. Useful for conditionals and loops. 
+```python
+a = "hello"
+b = [1, "xyz", 5.0]
+c = {"dog": "woof"}
+print(len(a))  # -> 5
+print(len(b))  # -> 3
+print(len(c))  # -> 1
+```
+
 # Logic and Equality in Python
 One of the most common things you'll do as a programmer is check if objects or values are equal.
 ```python
@@ -115,7 +127,7 @@ print(price > 1 and price < 100)  # -> True
 # `if`, `elif`, and `else` statements
 You'll often want your program to do different things depending on some variable or input. You can control the flow of your program using `if` statements, which execute code only *if* their condition is `True`. An `if` statement can be on its own, or followed by an `elif` ("else if"), or `else` statement.
 ```python
-price = 25
+price = 16
 if price <= 3:
 	print("That's pretty cheap!")
 elif price > 3 and price <= 15:
@@ -124,5 +136,7 @@ elif price > 15 and price <= 20:
 	print("You're asking a little much...")
 else:
 	print("You're out of your mind!") 
-# - > "You're out of your mind!"
+# - > "You're asking a little much..."
 ```
+
+# 
