@@ -147,8 +147,9 @@ else:
 # - > "You're asking a little much..."
 ```
 
-# `for` loops, `range()` function 
+# `for` loops, `range()` and `len()` functions
 A `for` loop is used to iterate over a sequence of data, such as a `list`, `str`, or `dict`. Using a `for` loop you can execute code for each item in the sequence.
+You can write a `for` loop 
 - print each item in a list
 ```python
 data = [1, 2, 3]
@@ -158,3 +159,4 @@ for x in data:
 # -> 2
 # -> 3
 ```
+
