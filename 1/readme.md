@@ -253,12 +253,22 @@ Next, lets add a function to move the car X positions forwards. Let's have this 
 		self.position = self.position + X
 		return self.position
 ```
-Now, we'll write a function which prints and returns a message describing the car and where it is.
+Now, we'll write a function which creates and returns a message describing the car and where it is.
 ```python
 	def report(self):
 		message = "Car name: " + self.name
 		message = message + "\n"
 		message = message + "Position: " + self.position
-		print(message)
 		return message
+```
+### Using classes
+You (or someone else) can use the new `Car` class in the following way:
+```
+mycar = Car("subaru")
+mycar.move_forward(10)
+mycar.move_forward(-3)
+report = mycar.report()
+print(report)
+# -> Car name: subaru
+#    Position: 7
 ```
