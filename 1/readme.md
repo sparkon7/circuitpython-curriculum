@@ -232,7 +232,9 @@ print(output)                     # -> -9
 ```
 
 # Classes
-Classes are custom `object`s that you as a programmer create. Remember, an `object` has properties and methods. A property is a variable that belongs to that class, and a method is a function that belongs to the class as well. As an example, we are going to create a `class` for a Car. This car will have the following properties: a model name, a position, and a speed. The methods associated with this car will be moving and reporting its current position.
+Classes are custom `object`s that you create. An `object` has properties and methods. A property is a variable that belongs to that class, and a method is a function that belongs to the class. 
+### Writing classes
+As an example, we are going to create a `class` for a Car. This car will have the following properties: a model name, a position, and a speed. The methods associated with this car will be moving and reporting its current position.
 First, create a `class` named `Car`
 ```python
 class Car:
