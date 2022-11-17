@@ -51,7 +51,7 @@ We'll see more as we go!
 
 # modules and imports
 One of the strengths of Python is the amount of libraries it supports. This allows you to use code from another module in your program. You import modules using the `import` keyword, typically at the beginning of the file.
-- importing `math` and using the `pow` function
+- Importing `math` and using the `pow` function
 ```python
 import math
 x = math.pow(2,3)  # 2*2*2
