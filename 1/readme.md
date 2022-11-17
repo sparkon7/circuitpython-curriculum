@@ -268,7 +268,7 @@ Now, we'll write a function which creates and returns a message describing the c
 ```
 ### Using classes
 You (or someone else) can use the new `Car` class in the following way:
-```
+```python
 mycar = Car("subaru")
 mycar.move_forward(10)
 mycar.move_forward(-3)
