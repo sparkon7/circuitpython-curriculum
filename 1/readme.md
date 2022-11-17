@@ -129,7 +129,7 @@ print(len(c))  # -> 1
 ```
 
 # Logic and Equality in Python
-One of the most common things you'll do as a programmer is check if objects or values are equal.
+One of the most common things you'll do as a programmer is use the `==` operator to check if objects or values are equal. 
 ```python
 password = "badpassword"
 print(password == "goodpassword")  # -> False
@@ -277,3 +277,5 @@ print(report)
 # -> Car name: subaru
 #    Position: 7
 ```
+
+# Writing a Python script: `__name__ == __main__`
