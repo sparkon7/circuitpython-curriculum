@@ -204,12 +204,14 @@ def my_first_function():
 	x = 1
 	y = 2
 	print(x + y)
+
 my_first_function()  # -> 3
 ```
 Functions can take arguments, which are data that will be used within the function but is not declared when the function is written. Writing a function with arguments looks like the following
 ```python
 def my_second_function(arg1, arg2):
 	print(arg1 + arg2)
+
 my_second_function(1, 2)      # -> 3
 my_second_function("a", "b")  # -> "ab"
 ```
