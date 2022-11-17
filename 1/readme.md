@@ -176,7 +176,7 @@ for x in range(3):
 ```
 If you give `range()` just 1 argument, it will iterate from 0 until that number, but it will not hit that number. If you give `range()` two arguments, it will start at the first and go until the second, incrementing by 1. Given 3 arguments, `range()` will iterate starting at the first and ending at the second, and incrementing each step by the third value.
 To write a loop that counts by 3 from 0 until 20, 
-```
+```python
 for x in range(0, 20, 3):
 	print(x)
 # -> 0
