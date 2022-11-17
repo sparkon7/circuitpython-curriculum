@@ -184,9 +184,9 @@ print(data)  # -> [15, 16, 17, 18]
 Now, let's write a `for` loop that prints every key and value from a dictionary
 ```python
 data = {"dog": "woof", "cat": "meow"}
-for k in data.keys():
-	val = data[k]
-	msg = k + " says " + val
+for key in data.keys():
+	val = data[key]
+	msg = key + " says " + val
 	print(msg)
 # -> "dog says woof"
 # -> "cat says meow"
