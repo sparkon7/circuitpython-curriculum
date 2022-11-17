@@ -297,4 +297,5 @@ if __name__ == "__main__":
 I know it looks strange. This is a simple conditional statement that checks the "name" of the Python module. When a file is run (and not imported), Python assigns the `__name__` variable to the value `__main__`. But when the file is being imported into another, this is not true. You don't have to totally understand this part yet, but its helpful and good practice to follow it.
 
 # Next steps
+Check out the `exercises.py` file and see if you can complete them. Check your answers by running the file and comparing the output to `exercises-solution.py`.
 Take a look at the file `Car.py`. This includes the complete implementation of the `Car` class, along with the `main()` function and logic to run it. Then take a look at the `MyCar.py` file. Can you complete the missing pieces? 
