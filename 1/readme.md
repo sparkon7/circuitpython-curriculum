@@ -280,7 +280,7 @@ print(report)
 
 # Scripting: `__name__ == __main__`
 It's common to write a `main()` function near the end of your program which contains all of the code you want to execute when the file is run. This also prevents code from executing when the module is imported, and ensures it only runs when the module is executed. The final 2 lines of many Python programs will be
-```
+```python
 if __name__ == "__main__":
 	main()
 ```
