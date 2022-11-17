@@ -218,7 +218,7 @@ my_second_function("a", "b")  # -> "ab"
 ```
 ### `return` from a function
 In the previous two examples, our functions `print`ed the important data that they produce. That is rarely actually helpful. Normally, we want our function to create some result that will be used later in the program. To do this, we need to store the output in a variable instead of just printing it. This is where the `return` keyword comes in.
-```
+```python
 def my_third_function(arg1, arg2):
 	val = (arg1 - arg2) * 3
 	return val
