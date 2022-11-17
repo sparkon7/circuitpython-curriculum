@@ -104,6 +104,11 @@ data = {"dog": "woof", "cat": "meow"}
 data["cow"] = "moo"
 print(data)  # -> {"dog": "woof", "cat": "meow", "cow": "moo"}
 ```
+### Accessing an item
+Access an item by using square brackets with the item's key
+```python
+print(data["cat"])  # -> "meow"
+```
 ### Get a list of the keys and values
 ```python
 keys = dict.keys()
