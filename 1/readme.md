@@ -184,7 +184,7 @@ for k in data.keys():
 ```
 
 # `while` loops
-A `while` loop is used to iterate *while* a condition is true. This is different from a `for` loop because the number of iterations is not always known. Writing a `while` loop is simple. Here is a `while` loop which will increment a number until it is greater than 10.
+A `while` loop is used to iterate *while* a condition is true. This is different from a `for` loop because the number of iterations is not always known. Here is a `while` loop which will increment a number until it is greater than 10.
 ```python
 start = 0
 while start < 10:
