@@ -173,7 +173,7 @@ for i in range(len(data)):
 print(data)  # -> [15, 16, 17, 18]
 ```
 Now, let's write a `for` loop that prints every key and value from a dictionary
-```
+```python
 data = {"dog": "woof", "cat": "meow"}
 for k in data.keys():
 	val = data[k]
@@ -181,4 +181,17 @@ for k in data.keys():
 	print(msg)
 # -> "dog says woof"
 # -> "cat says meow"
+```
+
+# `while` loops
+A `while` loop is used to iterate *while* a condition is true. This is different from a `for` loop because the number of iterations is not always known. Writing a `while` loop is simple. Here is a `while` loop which will increment a number until it is greater than 10.
+```python
+start = 0
+while start < 10:
+	start = start + 1
+	print(start)
+# -> 1
+# -> 2
+# -> ...
+# -> 10
 ```
