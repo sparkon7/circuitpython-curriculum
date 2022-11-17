@@ -195,3 +195,14 @@ while start < 10:
 # -> ...
 # -> 10
 ```
+
+# Functions
+Functions are the building blocks of Python programs. They contain blocks of code which are executed when the function is called. Functions help make code easier to read, easier to write, and easier to share. You can wrap common pieces of code in functions to avoid rewriting it multiple places. 
+To define a function, use the `def` keyword followed by the function name. Indented, starting on the following line, write the function contents. 
+```python
+def my_first_function():
+	x = 1
+	y = 2
+	print(x + y)
+my_first_function()  # -> 3
+```
