@@ -263,9 +263,10 @@ Now, we'll write a function which creates and returns a message describing the c
 	def report(self):
 		message = "Car name: " + self.name
 		message = message + ", "
-		message = message + "Position: " + self.position
+		message = message + "Position: " + str(self.position)
 		return message
 ```
+One thing to point out here is the type casting when converting the `int` `position` into a `str`. This is necessary so we can add it to the `str` `message`.
 ### Using classes
 You (or someone else) can use the new `Car` class in the following way:
 ```python
@@ -277,4 +278,13 @@ print(report)
 # -> Car name: subaru, Position: 7
 ```
 
-# Writing a Python script: `__name__ == __main__`
+# `__name__ == __main__`
+It's common to write a `main()` function near the end of your program which contains all of the code you want to execute when the file is run. This also prevents code from executing when the module is imported, and ensures it only runs when the module is executed. The final 2 lines of many Python programs will be
+```
+if __name__ == "__main__":
+	main()
+```
+I know it looks strange. This is a simple conditional statement that checks the "name" of the Python module. When a file is run (and not imported), Python assigns the `__name__` variable to the value `__main__`. But when the file is being imported into another, this is not true. You don't have to totally understand this part yet, but its helpful and good practice to follow it.
+
+# Next steps
+Take a look at the file `Car.py`. This includes the complete implementation of the `Car` class, along with the `main()` function and logic to run it. Then take a look at the `MyCar.py` file. Can you complete the missing pieces? 
