@@ -195,6 +195,7 @@ while start < 10:
 # -> ...
 # -> 10
 ```
+In this example, `start` begins at `0` and is increased by `1` each step. During each iteration, the `while` condition checks if `start` is currently less than 10. If so, the contents of the loop execute. Otherwise, they do not, and the loop is terminated.
 
 # Functions
 Functions are the building blocks of Python programs. They contain blocks of code which are executed when the function is called. Functions help make code easier to read, easier to write, and easier to share. You can wrap common pieces of code in functions to avoid rewriting it multiple places. 
