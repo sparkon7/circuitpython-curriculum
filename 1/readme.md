@@ -262,7 +262,7 @@ Now, we'll write a function which creates and returns a message describing the c
 ```python
 	def report(self):
 		message = "Car name: " + self.name
-		message = message + "\n"
+		message = message + ", "
 		message = message + "Position: " + self.position
 		return message
 ```
@@ -274,8 +274,7 @@ mycar.move_forward(10)
 mycar.move_forward(-3)
 report = mycar.report()
 print(report)
-# -> Car name: subaru
-#    Position: 7
+# -> Car name: subaru, Position: 7
 ```
 
 # Writing a Python script: `__name__ == __main__`
