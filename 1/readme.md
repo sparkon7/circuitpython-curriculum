@@ -13,7 +13,11 @@
 - **Internet of Things**: Python is supported on many devices and sensors
 
 # Writing Python Code
-Python is an "interpreted" language. The Python interpreter reads and executes your code line-by-line. The easiest way to run Python code is by writing it in a `.py` file, such as `program.py`, and running it with the shell command `python program.py`
+Python is an object-oriented, untyped, interpreted language. This means that:
+1. Everything in Python is an "object", with its own methods and properties. 
+2. As a programmer, you do not need to define the type of a variable.
+2. The Python interpreter reads and executes your code line-by-line. 
+The easiest way to run Python code is by writing it in a `.py` file, such as `program.py`, and running it with the shell command `python program.py`
 ### Declaring Variables
 Python is an "untyped" language, meaning you do not need to declare types of variables. 
 ```python
@@ -225,3 +229,34 @@ def my_third_function(arg1, arg2):
 
 output = my_third_function(1, 4)  # store the result from the function, val
 print(output)                     # -> -9
+```
+
+# Classes
+Classes are custom `object`s that you as a programmer create. Remember, an `object` has properties and methods. A property is a variable that belongs to that class, and a method is a function that belongs to the class as well. As an example, we are going to create a `class` for a Car. This car will have the following properties: a model name, a position, and a speed. The methods associated with this car will be moving and reporting its current position.
+First, create a `class` named `Car`
+```python
+class Car:
+```
+Next comes the first method that every `class` will always start with: `__init__`:
+```python
+class Car:
+	def __init__(self, name):
+		self.name = name
+		self.position = 0
+```
+The name `__init__` is short for `initializer`, and is used to set up everything the class needs. The first argument to this function, `self` will always be the first argument to functions we define within a class. It is a reference to the object itself so we can access its properties and methods. 
+Next, lets add a function to move the car X positions forwards. Let's have this function return the updated current position as well. We'll call it `move_forward`.
+```python
+	def move_forward(self, X):
+		self.position = self.position + X
+		return self.position
+```
+Now, we'll write a function which prints and returns a message describing the car and where it is.
+```python
+	def report(self):
+		message = "Car name: " + self.name
+		message = message + "\n"
+		message = message + "Position: " + self.position
+		print(message)
+		return message
+```
