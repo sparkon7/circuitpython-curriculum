@@ -298,4 +298,5 @@ I know it looks strange. This is a simple conditional statement that checks the 
 
 # Next steps
 Check out the `exercises.py` file and see if you can complete them. Check your answers by running the file and comparing the output to `exercises-solution.py`.
-Take a look at the file `Car.py`. This includes the complete implementation of the `Car` class, along with the `main()` function and logic to run it. Then take a look at the `MyCar.py` file. Can you complete the missing pieces? 
+Take a look at the file `Car.py`. This includes the complete implementation of the `Car` class, along with the `main()` function and logic to run it.
+Then take a look at the `MyClass.py` file, for an exercise in writing your own class. View the solution in `MyClass-solution.py`.
