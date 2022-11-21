@@ -4,7 +4,7 @@ CircuitPython provides a high-level, user-friendly interface for developers like
 
 # Anatomy of a CircuitPython project
 A CircuitPython project has a simple file structure
-1) ```pythonboot.py````: this file is executed when CircuitPython starts up. It is commonly used to change system settings, such as storage rules, or create any files/folders your project needs.
-2) ```pythoncode.py```: this is the main logic of your project, which CircuitPython will execute after it boots up
-3) ```pythonlib/```: this folder contains the external CircuitPython libraries in `.mpy` format. 
+1) `boot.py`: this file is executed when CircuitPython starts up. It is commonly used to change system settings, such as storage rules, or create any files/folders your project needs.
+2) `code.py`: this is the main logic of your project, which CircuitPython will execute after it boots up
+3) `lib/`: this folder contains the external CircuitPython libraries in `.mpy` format. 
 When you 
