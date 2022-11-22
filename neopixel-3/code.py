@@ -1,7 +1,7 @@
 '''
 step 1: import libraries
-	the `board` library contains variables to reference the pins and specific board
-	the `neopixel` library allows us to control the LEDs on board
+	`board`: library contains variables to reference the pins and specific board
+	`neopixel`: library allows us to control the LEDs on board
 '''
 import board
 import neopixel
