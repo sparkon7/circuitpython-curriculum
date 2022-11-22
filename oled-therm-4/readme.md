@@ -1,4 +1,4 @@
-# OLED! Thermomter! Your second CircuitPython Project
+# OLED! Thermometer! Your second CircuitPython Project
 In this fun project, we will see a few new concepts
 1. using an `I2C` connection to communicate with external devices (an OLED)
 2. displaying information on an OLED screen
@@ -30,3 +30,10 @@ The preassigned address for our 128x64 monochrome OLED in `0x3d`, which is hexad
 I2C is simply the protocol for how the board and device understand each others messages.
 A "bus" is the tool that transports data to and from the microcontroller and OLED screen.
 So in order to create an instance of our OLED screen, we need both an I2C instance and an I2C bus instance. 
+
+# Using Builtin Sensors
+Generally, external devices will be connected with multiple wires, and you will have to keep track of these connections in order to use the device.
+For example, if we have a wired sensor with input connected to boards `D9` and output to `D10`, we will need to reference the pins as `board.D9` and `board.D10` in the proper places in our CircuitPython code. 
+But luckily, we can directly reference the builtin sensors by name.
+For example, to reference the data pins of the speaker, we can simply state `board.SPEAKER`. 
+And similarly, to reference the data pins of the thermometer, we can use `board.THERMISTOR`.
