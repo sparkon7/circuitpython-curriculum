@@ -14,6 +14,12 @@ Here is a rough project outline
 - Write a `main` function that uses `get_tempF()` to display a friendly message to the user telling them the current temperature.
 - To finalize our CircuitPython program, per usual, call your `main()` function indefintely within a `while True` statement. Use the `time.sleep` function to pause for a short period of time between readings. 
 
+# Displaying data on the OLED
+Because the CircuitPlayground Express is resource-constrained, it does not have enough onboard memory to use the official animation and display libraries provided by Adafruit.
+Luckily, that will not stop us from being able to display data.
+Because our board is connected to the OLED via an I2C serial connection, any serial output from our program will be captured by this connection and displayed on the screen.
+This means we can simply use the `print()` function to output data.
+
 # What is I2C?
 I2C (Inter-Integrated Circuit) communcation is a "language" that computers/devices speak to each other. 
 Just like humans need to communicate using the same language, computers do too.
