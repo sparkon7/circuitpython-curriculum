@@ -20,5 +20,5 @@ The goal of this project is to display a custom pattern on your device. The outl
 	- value: the (R,G,B) triplet color to set this pixel to
 	
 	to change the value of a pixel, you can simply index into the `pixels` object and assign the value as if you are changing an item in a list. After changing the value, print a short message describing the change, and call the `pixels.show()` method to display the changes. 
-4. Now for the fun part. Using the two helper methods we created, `clear_pixels` and `set_pixel_color`, write another function `my_fun_pattern` to display your own fun pattern!
+4. Now for the fun part. Using the two helper methods we created, `clear_pixels` and `set_pixel_color`, write another function `my_fun_pattern` to display your own fun pattern! Assign different colors to different pixels, have them change over time, whatever you want!
 5. End your program by calling `my_fun_pattern()` indefinitely! Hint: use a `while` statement.
