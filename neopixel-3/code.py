@@ -31,8 +31,8 @@ def clear_pixels():
 step 4: write a method called `set_pixel_color`, which will update the color value
 of a pixel, print a message, and display the change.
 This method takes two arguments
-	pixel: the NeoPixel in the strip to update. This value sho
-	color: the color to set the pixel in (R,G,B) format
+	`pixel`: the NeoPixel in the strip to update. This value sho
+	`color`: the color to set the pixel in (R,G,B) format
 '''
 def set_pixel_color(pixel, color):
 	pixels[pixel] = color
