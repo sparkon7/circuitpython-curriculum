@@ -21,6 +21,10 @@ There are many different pros and cons to each language/protocol, but I2C is pop
 1. Only requires 1 or 2 communication wires
 2. "shared bus" protocol - can communicate with 100+ devices simultaneously
 3. Implemented on lots of devices
+### So what is an I2C "address"?
+Each I2C device (an OLED, a sensor, etc) has a unique I2C address in the range of 0-127. 
+This allows our board to communicate with multiple (up to 127) devices at a time.
+When creating an I2C bus instance, we need to specify the I2C address so our data is sent to and read from the proper data.
 ### But what about an I2C "bus"?
 I2C is simply the protocol for how the board and device understand each others messages.
 A "bus" is the tool that transports data to and from the microcontroller and OLED screen.
