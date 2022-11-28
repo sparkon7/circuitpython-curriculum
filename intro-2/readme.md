@@ -6,7 +6,7 @@ CircuitPython provides a high-level, user-friendly interface for developers like
 For the first projects we do, we will use the CircuitPlayground Express board, from Adafruit.
 This little board packs a punch, with 
 1) Pins/Jumper Connections: A pin can read or send small electrical currents, which can be used to interact with outside devices.
-2) `stemma` Cable Connection: The small black block on the bottom of the board is for plug 'n play connection of certain compatible devices also made by Adafruit.
+2) JST Battery Connection: The small black block on the bottom of the device is for powering it with a battery pack.
 3) MicroUSB plug: This can be used to power the device, and/or read/write data to another device.
 4) Lights!
 5) Input/Output devices builtin! This board includes a microphone, two buttons, a switch, and speaker.
