@@ -23,9 +23,9 @@ A CircuitPython project has a simple file structure
 There are two main ways to execute CircuitPython on a microcontroller
 ### Via the REPL
 The REPL is Python's read-evaluate-print-loop, which allows you to enter individual lines of code and have them run immediately. 
-To access the REPL, you must first make a serial connection to the device. "Serial" is a protocol (computer language) that devices use to communicate over USB cables. 
+To access the REPL, you must first make a serial/usb connection to the device.
 Once you have plugged in your device, you can use a serial communcation tool such as `tio`, or the serial extension on VSCode, to access the device's serial console. 
-Once connected, you can press any button to access the REPL.
+From there, you can press any button to access the REPL.
 You should see a line of text like
 ```
 Adafruit CircuitPython 8.0.0-beta.4 on 2022-10-30; Adafruit CircuitPlayground Express with displayio with samd21g18
@@ -49,7 +49,7 @@ Microcontrollers are "memory-constrained" devices.
 This means that as a programmer you need to be aware of how much memory your program needs and if your board can handle the task. 
 Many of our projects will use the Adafruit CircuitPlayground Express. The CPX has
 - 2 MB of Flash storage
-- around 17k bytes of memory
+- around 17k bytes of memory, which is about 250 lines of code 
 ### Do I have enough Flash?
 To determine if your board has enough Flash memory to run your project, you can use your file explorer to determine the size of each file. Remember to include your `code.py`, `boot.py`, and any `.mpy`, font, or other files your program will rely on. 
 ### Do I have enough RAM?
