@@ -19,7 +19,25 @@ A CircuitPython project has a simple file structure
 2) `code.py`: this is the main logic of your project, which CircuitPython will execute after it boots up
 3) `lib/`: this folder contains the external CircuitPython libraries your project needs, in `.mpy` format. 
 
-# How to write a CircuitPython Project
+# Writing CircuitPython Code
+There are two main ways to execute CircuitPython on a microcontroller
+### Via the REPL
+The REPL is Python's read-evaluate-print-loop, which allows you to enter individual lines of code and have them run immediately. 
+To access the REPL, you must first make a serial connection to the device. "Serial" is a protocol (computer language) that devices use to communicate over USB cables. 
+Once you have plugged in your device, you can use a serial communcation tool such as `tio`, or the serial extension on VSCode, to access the device's serial console. 
+Once connected, you can press any button to access the REPL.
+You should see a line of text like
+```
+Adafruit CircuitPython 8.0.0-beta.4 on 2022-10-30; Adafruit CircuitPlayground Express with displayio with samd21g18
+>>> 
+```
+From there, you can enter code and see the results.
+```
+Adafruit CircuitPython 8.0.0-beta.4 on 2022-10-30; Adafruit CircuitPlayground Express with displayio with samd21g18
+>>> print("hello world!")
+hello world!
+```
+### Loading `.py` files onto the device
 When you plug a CircuitPython device into your computer via USB, it shows up as a USB device with the name `CIRCUITPY`.
 From there, you can use your favorite IDE to edit the `boot.py` and `code.py` files, as well as copy the `.mpy` folders into the device's `lib/` directory 
 
