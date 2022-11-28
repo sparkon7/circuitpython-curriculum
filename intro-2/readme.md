@@ -20,4 +20,5 @@ A CircuitPython project has a simple file structure
 3) `lib/`: this folder contains the external CircuitPython libraries your project needs, in `.mpy` format. 
 
 # How to write a CircuitPython Project
-TODO: This depends on what OS and IDE the students use. 
+When you plug a CircuitPython device into your computer via USB, it shows up as a USB device with the name `CIRCUITPY`.
+From there, you can use your favorite IDE to edit the `boot.py` and `code.py` files, as well as copy the `.mpy` folders into the device's `lib/` directory 
