@@ -22,3 +22,22 @@ A CircuitPython project has a simple file structure
 # How to write a CircuitPython Project
 When you plug a CircuitPython device into your computer via USB, it shows up as a USB device with the name `CIRCUITPY`.
 From there, you can use your favorite IDE to edit the `boot.py` and `code.py` files, as well as copy the `.mpy` folders into the device's `lib/` directory 
+
+# Memory on CircuitPython Devices
+Computers have two different types of memory.
+Nonvolatile, or "Flash" memory, retains its data even after power is turned off. This is used to store program files, such as your `code.py`, audio files, fonts, etc.
+Volatile memory, or "RAM", is used to store all of the variables and data your code creates and needs. 
+Microcontrollers are "memory-constrained" devices.
+This means that as a programmer you need to be aware of how much memory your program needs and if your board can handle the task. 
+Many of our projects will use the Adafruit CircuitPlayground Express. The CPX has
+- 2 MB of Flash storage
+- around 17k bytes of memory
+### Do I have enough Flash?
+To determine if your board has enough Flash memory to run your project, you can use your file explorer to determine the size of each file. Remember to include your `code.py`, `boot.py`, and any `.mpy`, font, or other files your program will rely on. 
+### Do I have enough RAM?
+Theres no good way to determine this before hand.
+CircuitPython provides us with the `gc` library for functionality related to the garbage collector, which is the name of Python's memory manager. 
+The `gc` library provides many functionalities, but for now we are most interested in
+- `gc.collect()`: This function will instruct the garbage collector to free up any unused memory at this point in the program. It is helpful to call this at certain points in your program.
+- `gc.mem_free()`: This function will return the amount (in Bytes) of free and usable memory.
+- `gc.mem_alloc()`: This function will return the amount (in Bytes) of allocated (currently being used) memory.
