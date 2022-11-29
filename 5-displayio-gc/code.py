@@ -89,7 +89,6 @@ step 9: set up our connection to the light sensor and display the initial value
 '''
 from analogio import AnalogIn
 sens = AnalogIn(board.LIGHT)
-text_area.text = str(sens.value) 
 update("light sensor")
 
 '''
@@ -133,7 +132,7 @@ def graph_main():
 		x += 1
 
 while True:
+	gc.collect()
 	# simple_main()
 	# more_fun_main()
-	gc.collect()
 	graph_main()
