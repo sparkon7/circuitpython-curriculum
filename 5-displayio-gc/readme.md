@@ -7,6 +7,9 @@ As a refresher, there are two types of memory for two different purposes:
 To be cautious with you Flash consumption, minimize the amount of external libraries you rely on (`.mpy` files and `import` statements) and the actual size of your program files. 
 To watch your RAM consumption, we rely on the `gc` library from Adafruit. `gc` stands for `garbage collector` which is Python's memory management software. 
 
+# ***DISCLAIMER***
+This project only kind of works on the CPX! It straddles the line of too much memory, and will sometimes randomly crash the RAM. The provided code is up and running on the instructors CPX, but 1/2 of the times I upload *the same* code, it will throw memory errors. If you're having problems getting the code to run, try commenting out the entire program, uploading the commented-out file, and then reuploading the not commented file. You may also have to unplug the board and plug it in again, and/or press the physical "reset" button multiple times. 
+
 # Project Outline
 As a CircuitPython programmer, you do not have to manage your own memory. This means you don't have to ask for more memory or clear the memory you're done using.
 But sometimes you want to, or at least you want to know how much is left before you run out and crash the board. 
