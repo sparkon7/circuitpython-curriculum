@@ -80,8 +80,7 @@ RAM to store this large of a variable
 '''
 step 8.b: draw some initial text on the screen - skip the memory-intensive background
 '''
-text = "Hello World!"
-text_area = label.Label(terminalio.FONT, text=text, color=0x000000, x=28, y=h//2-1)
+text_area = label.Label(terminalio.FONT, text="hello world!", color=0x000000, x=28, y=h//2-1)
 splash.append(text_area)
 update("text")
 
@@ -94,9 +93,47 @@ text_area.text = str(sens.value)
 update("light sensor")
 
 '''
-step 10: write our main logic, to periodically poll the sensor and update the oled
+step 10: write some simple main function, to periodically poll the sensor and update the oled
 '''
-from time import sleep
+# def simple_main():
+# 	from time import sleep
+# 	while True:
+# 		text_area.text = str(sens.value)
+# 		sleep(0.5)
+
+'''
+step 11: write a more fun main function to also move the location of the text
+'''
+# def more_fun_main():
+# 	from time import sleep
+# 	from random import randrange
+# 	while True:
+# 		v = str(sens.value)
+# 		text_area.text = v
+# 		text_area.x = randrange(0,128-len(v))
+# 		text_area.y = randrange(0,64)
+# 		sleep(0.5)
+
+'''
+step 12: lets write a function to graph the light value over time
+remember, the light sensor returns values in the range (0, 65000)
+'''
+def graph_main():
+	from time import sleep
+	text_area.text = ""
+	for i in range(128):
+		for j in range(64):
+			color_bitmap[i,j] = 0
+	x = 0
+	while x < 128:
+		val = sens.value
+		y = int(64 * (1 - (val / 65000)))
+		color_bitmap[x,y] = 1
+		sleep(0.05)
+		x += 1
+
 while True:
-	text_area.text = str(sens.value)
-	sleep(0.5)
+	# simple_main()
+	# more_fun_main()
+	gc.collect()
+	graph_main()
