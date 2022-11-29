@@ -13,6 +13,7 @@ But sometimes you want to, or at least you want to know how much is left before 
 This is especially true when working with the OLED on the CPX.
 By the end of this project your device will be periodically reading its light sensor and displaying the value in various fun ways. 
 While developing this functionality, we will work in a very step-by-step fashion, using the `gc` module to watch our memory usage and free any unused memory.
+Just a note, this project is broken into more, **smaller** parts to ensure we check our memory consumption.
 1. Import the `gc` module and write a little helper function to call the `collect()` function and print the current amount of free memory. We will use this to observe our usage over a serial console
 2. Import the rest of the requires modules for the base OLED and board functionality. Use the `update()` function to observe how the amount of free memory has decreased.
 3. As we always have to do with the OLED, initialize the i2c and display bus. Out of curiousity and caution, we'll check the memory again.
@@ -24,4 +25,10 @@ While developing this functionality, we will work in a very step-by-step fashion
 9. It seems like we have around 1000 bytes left in memory. This is probably enough to do some simple plotting of the light sensor value. First off, lets initialize our light sensor and display the initial reading as the text in our `Label`.
 10. Write a `simple_main()` function which periodically polls the light sensor, and displays the value on the OLED by changing the `Label.text` property.
 11. It seems like we have some extra memory, let's use it! Write a `more_fun_main()` function, which is similar to the `simple_main()`, but also changes the `x` and `y` properties of the `Label` so that the reading moves across the display. Hint: use a function from the `random` library
-12. Now, enough with just displaying the value in text on the screen. How informative is that, really? Let's make a simple plotter to make a moving graph of the value. 
+12. Now, enough with just displaying the value in text on the screen. How informative is that, really? Let's make a simple plotter to make a moving graph of the value. More on this below...
+
+# Garbage Collection
+# I2C and the Display Bus
+# Groups, Bitmaps, TileGrids, and Labels
+# Making a plotter
+First clear the contents of your `Label` object. We don't want this text jumbling up the plot. Next, remember the `Bitmap` we made in step 6? This is a 2D list that maps pixels to colors. Assigning the value `bitmap[10,15] = 1` will change the color of the 10th pixel across and 15th pixel down to the 2nd element of your `Palette`. 
