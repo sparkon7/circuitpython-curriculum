@@ -1,0 +1,4 @@
+adafruit_esp32spi/
+adafruit_wsgi/
+neopixel.mpy
+adafruit_requests.mpy
