@@ -22,8 +22,9 @@ def create_display():
 Return:
     `adafruit_lis3dh.LIS3DH_I2C` object'''
 def create_accelerometer():
+    i2c_address = 0x19
     i2c = I2C(board.ACCELEROMETER_SCL, board.ACCELEROMETER_SDA)
-    accel = adafruit_lis3dh.LIS3DH_I2C(i2c, address=0x19)
+    accel = adafruit_lis3dh.LIS3DH_I2C(i2c, address=i2c_address)
     return accel
 
 '''Step 4: Compute and return a scaled reading of the current x,y,z acceleration
@@ -55,7 +56,7 @@ def compute_magnitude(scaled_reading):
 it sees an acceleration magnitude of greater than the given `threshold`. Maintain a 
 counter for steps, and display this value on the display using a `print` statement.
 Parameters:
-    `threshold`: the acceleration magnitude which defines a step'''
+    `threshold`: the acceleration magnitude (m/s^2) which defines a step'''
 def simple_threshold_pedometer(threshold):
     display = create_display()
     accel = create_accelerometer()
