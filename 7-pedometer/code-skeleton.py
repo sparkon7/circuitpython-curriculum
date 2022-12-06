@@ -13,18 +13,14 @@ Return:
 def create_display():
     displayio.release_displays()
     i2c_address = 0x3d
-    i2c = board.I2C()
-    bus = displayio.I2CDisplay(i2c, device_address=i2c_address, reset=board.D9)
-    display = adafruit_displayio_ssd1306.SSD1306(bus, width=128, height=64)
-    return display
+    ...  # finish the initialization here
 
 '''Step 3: Initialize a connection to our onboard accelerometer
 Return:
     `adafruit_lis3dh.LIS3DH_I2C` object'''
 def create_accelerometer():
-    i2c = I2C(board.ACCELEROMETER_SCL, board.ACCELEROMETER_SDA)
-    accel = adafruit_lis3dh.LIS3DH_I2C(i2c, address=0x19)
-    return accel
+    i2c_address = 0x19
+    ...  # finish the initialization here
 
 '''Step 4: Compute and return a scaled reading of the current x,y,z acceleration
 Parameters:
@@ -34,10 +30,8 @@ Return:
 def scaled_reading(sensor):
     grav = adafruit_lis3dh.STANDARD_GRAVITY
     scaled_vals = []
-    raw_vals = sensor.acceleration
-    for rv in raw_vals:
-        scaled = rv / grav
-        scaled_vals.append(scaled)
+    # take a reading from the sensor and scale the results by `grav`
+    ...
     return scaled_vals
 
 '''Step 5: Compute and return the current acceleration magnitude. 
@@ -46,10 +40,7 @@ Parameters:
 Return:
     `float` value of current acceleration magnitude'''
 def compute_magnitude(scaled_reading):
-    mag = 0
-    for sr in scaled_reading:
-        mag += sr ** 2
-    return mag
+    ...  # finish this function
 
 '''Step 6: Create a simple threshold pedometer. This pedometer counts a "step" when
 it sees an acceleration magnitude of greater than the given `threshold`. Maintain a 
@@ -57,14 +48,10 @@ counter for steps, and display this value on the display using a `print` stateme
 Parameters:
     `threshold`: the acceleration magnitude which defines a step'''
 def simple_threshold_pedometer(threshold):
-    display = create_display()
-    accel = create_accelerometer()
+    ... # call your `create_` functions to build your display and sensor
     count = 0
     while True:
-        read = scaled_reading(accel)
-        mag = compute_magnitude(read)
-        if mag > threshold:
-            count += 1
+        ... # take a reading, compute the magnitude, and (possibly) update your steps
         print("\n", count, "\n")
         time.sleep(0.05)
 
